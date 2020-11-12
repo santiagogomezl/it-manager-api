@@ -47,7 +47,6 @@ tasksRouter
       .catch(next)
   })    
 
-  // GET product by ID
   tasksRouter
   .route('/:task_id')
   .all((req, res, next) => {
@@ -67,7 +66,7 @@ tasksRouter
       .catch(next)
   })
   .get((req, res, next) => {
-    res.json(serializeUser(res.user))
+    res.json(serializeTask(res.task))
   })
   .delete((req, res, next) => {
     TasksService.deleteTask(
