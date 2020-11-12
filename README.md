@@ -1,26 +1,50 @@
-# Express Boilerplate!
+# IT Manager API
 
-This is a boilerplate project used for starting new projects!
+This API serves company data to the IT Manager App, providing user information, workstation data and task history
 
-## Set up
+## Summary
 
-Complete the following steps to start a new project (NEW-PROJECT-NAME):
+After setting up your postgres database and seeding the company data, you can manage and retrieve the information, and render it on the IT Manager App
 
-1. Clone this repository to your local machine `git clone BOILERPLATE-URL NEW-PROJECTS-NAME`
-2. `cd` into the cloned repository
-3. Make a fresh start of the git history for this project with `rm -rf .git && git init`
-4. Install the node dependencies `npm install`
-5. Move the example Environment file to `.env` that will be ignored by git and read by the express server `mv example.env .env`
-6. Edit the contents of the `package.json` to use NEW-PROJECT-NAME instead of `"name": "express-boilerplate",`
+## Endpoints
 
-## Scripts
+### Users
 
-Start the application `npm start`
+`GET /api/users` will retrieve all company users
 
-Start nodemon for the application `npm run dev`
+`GET /api/users/:user_id` will retrieve a single user with `id=user_id`
 
-Run the tests `npm test`
+`POST /api/users` will create a new user
 
-## Deploying
+`PATCH /api/users/:user_id` will update user with `id=user_id`
 
-When your new project is ready for deployment, add a new Heroku application with `heroku create`. This will make a new git remote called "heroku" and you can then `npm run deploy` which will push to this remote's master branch.
+`DELETE /api/users/:user_id` will delete user with `id=user_id`
+
+### Trades
+
+`GET /api/trades` will retrieve all company trades
+
+### Roles
+
+`GET /api/roles` will retrieve all company roles
+
+### Tasks
+
+`GET /api/tasks` will retrieve all company tasks
+
+`GET /api/tasks/:task_id` will retrieve a single task with `id=task_id`
+
+`POST /api/tasks` will create a new task
+
+`PATCH /api/tasks/:task_id` will update task with `id=task_id`
+
+`DELETE /api/tasks/:task_id` will delete task with `id=task_id`
+
+### Workstaions
+
+`GET /api/workstations` will retrieve all company workstations
+
+`GET /api/workstations/:workstations_id` will retrieve a single workstation with `id=workstation_id`
+
+
+
