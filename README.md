@@ -1,18 +1,18 @@
 # IT Manager API
 
-This API serves the store data to the IT Manager App providing users information, workstation data and tasks history
+This API serves company data to the IT Manager App, providing user information, workstation data and task history
 
 ## Summary
 
-After setting up your postgres database and seeding the store data, you can manage and retrieve the information and render it on the IT Manager App
+After setting up your postgres database and seeding the company data, you can manage and retrieve the information, and render it on the IT Manager App
 
 ## Endpoints
 
 ### Users
 
-`GET /api/users` will retrieve all company's users
+`GET /api/users` will retrieve all company users
 
-`GET /api/users/:user_id` will retrieve one single user with `id=user_id`
+`GET /api/users/:user_id` will retrieve a single user with `id=user_id`
 
 `POST /api/users` will create a new user
 
@@ -22,17 +22,17 @@ After setting up your postgres database and seeding the store data, you can mana
 
 ### Trades
 
-`GET /api/trades` will retrieve all company's trades
+`GET /api/trades` will retrieve all company trades
 
 ### Roles
 
-`GET /api/roles` will retrieve all company's roles
+`GET /api/roles` will retrieve all company roles
 
 ### Tasks
 
-`GET /api/tasks` will retrieve all company's tasks
+`GET /api/tasks` will retrieve all company tasks
 
-`GET /api/tasks/:task_id` will retrieve one single task with `id=task_id`
+`GET /api/tasks/:task_id` will retrieve a single task with `id=task_id`
 
 `POST /api/tasks` will create a new task
 
@@ -42,9 +42,9 @@ After setting up your postgres database and seeding the store data, you can mana
 
 ### Workstaions
 
-`GET /api/workstations` will retrieve all company's workstations
+`GET /api/workstations` will retrieve all company workstations
 
-`GET /api/workstations/:workstations_id` will retrieve one single workstation with `id=workstation_id`
+`GET /api/workstations/:workstations_id` will retrieve a single workstation with `id=workstation_id`
 
 
 
