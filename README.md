@@ -28,7 +28,7 @@ After setting up your postgres database and seeding the store data, you can mana
 
 `GET /api/roles` will retrieve all company's roles
 
-### Task
+### Tasks
 
 `GET /api/tasks` will retrieve all company's tasks
 
