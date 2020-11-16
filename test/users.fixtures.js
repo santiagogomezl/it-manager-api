@@ -1,3 +1,4 @@
+//Users dummy data for testing
 function makeUsersArray() {
   return [
     {
@@ -90,7 +91,7 @@ function makeUsersArray() {
       role_id: 6,
       workstation_id: 10
     }
-  ];
+  ]
 }
 
 function makeTradesArray() {

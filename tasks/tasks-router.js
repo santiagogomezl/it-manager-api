@@ -13,6 +13,7 @@ const serializeTask = task => ({
     due_date: task.due_date,
 })
 
+//CRUD routes for /api/tasks endpoint
 tasksRouter
   .route('/')
   .get((req, res, next) => {
